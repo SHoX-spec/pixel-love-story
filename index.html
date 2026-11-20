@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17152d">
+  <meta name="description" content="A little pixel world made just for you. Happy Birthday!">
+  <title>A Little World Made For You ♥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="music-hint" id="musicHint">เปิดเสียงเพลงได้ที่ปุ่ม ♫</div>
+  <button class="music-toggle" id="musicToggle" aria-label="เปิดหรือปิดเสียง">♫ <span>เพลง</span></button>
+
+  <main>
+    <section class="hero scene" id="home">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="moon"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">A SPECIAL QUEST FOR YOU</p>
+        <h1>A LITTLE<br><span>WORLD</span><br>MADE FOR YOU</h1>
+        <p class="hero-sub">วันนี้มีโลกใบเล็ก ๆ ที่ตั้งใจสร้างให้บ๊ายบายโดยเฉพาะเล๊ยยย</p>
+        <button class="pixel-btn" id="startBtn">▶ START ADVENTURE</button>
+        <p class="tiny-note">PRESS START TO BEGIN</p>
+      </div>
+      <div class="hero-character" aria-label="ตัวละครพิกเซลสองตัว">
+        <div class="pixel-person person-one"><i class="hair"></i><i class="face"></i><i class="body"></i><i class="legs"></i></div>
+        <div class="pixel-heart">♥</div>
+        <div class="pixel-person person-two"><i class="hair"></i><i class="face"></i><i class="body"></i><i class="legs"></i></div>
+      </div>
+      <div class="ground"></div>
+      <div class="scroll-cue">SCROLL TO EXPLORE <span>↓</span></div>
+    </section>
+
+    <section class="journey section" id="journey">
+      <div class="section-inner">
+        <p class="eyebrow">LEVEL 01 — OUR LITTLE WORLD</p>
+        <h2>ทุกการผจญภัย<br>ดีขึ้นเสมอเมื่อมีบ๊ายบาย</h2>
+        <p class="section-desc">อยู่ด้วยกันไปทุก ๆ ปีเลยนะบ๊ายบายในโลกพิกเซลเล็ก ๆ ใบนี้</p>
+        <div class="pixel-landscape">
+          <div class="cloud cloud-a"></div><div class="cloud cloud-b"></div>
+          <div class="sun"></div>
+          <div class="hill hill-back"></div><div class="hill hill-front"></div>
+          <div class="tree tree-a"><b></b><i></i></div><div class="tree tree-b"><b></b><i></i></div>
+          <div class="path"></div>
+          <div class="walking-couple">
+            <div class="pixel-person person-one small"><i class="hair"></i><i class="face"></i><i class="body"></i><i class="legs"></i></div>
+            <div class="pixel-person person-two small"><i class="hair"></i><i class="face"></i><i class="body"></i><i class="legs"></i></div>
+          </div>
+          <span class="land-heart h1">♥</span><span class="land-heart h2">♥</span><span class="land-heart h3">♥</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="memories section" id="memories">
+  <div class="section-inner">
+    <p class="eyebrow">LEVEL 02 — MEMORY COLLECTION</p>
+    <h2>ช่วงเวลาดี ๆ<br>ที่เรามีด้วยกัน</h2>
+    <p class="section-desc">❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</p>
+
+    <div class="memory-grid" id="memoryGrid">
+
+      <button class="memory-card" data-caption="A little moment, a big memory.">
+  <div class="photo-placeholder">
+    <video class="memory-video" autoplay muted loop playsinline>
+      <source src="Video/Video_01.mp4" type="video/mp4">
+    </video>
+  </div>
+  <b>Memory #01</b>
+  <small>♥ ♥ ♥</small>
+</button>
+
+      <button class="memory-card" data-caption="A little moment, a big memory.">
+  <div class="photo-placeholder">
+    <video class="memory-video" autoplay muted loop playsinline>
+      <source src="Video/Video_02.mp4" type="video/mp4">
+    </video>
+  </div>
+  <b>Memory #02</b>
+  <small>♥ ♥ ♥</small>
+</button>
+
+      <button class="memory-card" data-caption="A little moment, a big memory.">
+  <div class="photo-placeholder">
+    <video class="memory-video" autoplay muted loop playsinline>
+      <source src="Video/Video_03.mp4" type="video/mp4">
+    </video>
+  </div>
+  <b>Memory #03</b>
+  <small>♥ ♥ ♥</small>
+</button>
+
+    </div>
+  </div>
+</section>
+
+    <section class="gift-section section" id="gift">
+      <div class="section-inner">
+        <p class="eyebrow">LEVEL 03 — SECRET UNLOCKED</p>
+        <h2>มีของขวัญให้ด้วยนะ!</h2>
+        <p class="section-desc">ลองแตะกล่องของขวัญดูสิ</p>
+        <button class="gift-wrap" id="giftBtn" aria-label="เปิดกล่องของขวัญ">
+          <span class="gift-spark spark-one">✦</span><span class="gift-spark spark-two">✧</span>
+          <span class="gift-lid"></span><span class="gift-box"></span><span class="gift-ribbon-v"></span><span class="gift-ribbon-h"></span><span class="gift-bow"></span>
+          <span class="gift-label">OPEN ME!</span>
+        </button>
+        <div class="gift-message" id="giftMessage" aria-live="polite">
+          <div class="confetti" id="confetti"></div>
+          <p class="eyebrow">QUEST COMPLETE!</p>
+          <h2>Happy birthday, my favorite soul.<br><span>You mean the world to me.</span> ♥</h2>
+          <p>ขอให้ปีนี้เป็นปีที่ใจดีกับบ๊ายบายมาก ๆ น้าาาา</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="letter-section section" id="letter">
+      <div class="section-inner">
+        <p class="eyebrow">FINAL LEVEL — A LETTER FOR YOU</p>
+        <h2>มีอะไรอยากบอก...</h2>
+        <p class="section-desc">เปิดจดหมายเพื่ออ่านข้อความจากใจ</p>
+        <button class="envelope" id="letterBtn" aria-label="เปิดจดหมาย">
+          <span class="envelope-back"></span><span class="letter-paper"><b>TO MY FAVORITE PERSON</b><span>♥</span></span><span class="envelope-front"></span><span class="envelope-flap"></span><span class="seal">♥</span>
+        </button>
+        <article class="letter-content" id="letterContent">
+          <p class="letter-kicker">MY DEAREST ♥</p>
+          <h3>สุขสันต์วันเกิดนะบ๊ายบาย</h3>
+          <p id="loveLetterText">ขอให้วันนี้เป็นวันที่ดีของบ๊ายบายน้า โชกุนจะอยู่ตรงนี้ไปทุก ๆ ปีเลย ขอบคุณที่เข้ามาในชีวิตโชกุนนะทำให้โชกุนมีความสุขมากขึ้นเยอะเลย สร้างความทรงจำดีดีแบบนี้ไปด้วยกันทุกปีเลยนะ ♥</p>
+          <p class="letter-sign">i love you so much,<br><span>Shogun luv.♥</span></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="final-scene scene" id="final">
+      <div class="final-stars"></div>
+      <div class="big-pixel-heart">♥</div>
+      <div class="final-couple">
+        <div class="pixel-person person-one"><i class="hair"></i><i class="face"></i><i class="body"></i><i class="legs"></i></div>
+        <div class="pixel-person person-two"><i class="hair"></i><i class="face"></i><i class="body"></i><i class="legs"></i></div>
+      </div>
+      <p class="eyebrow">THE END? NEVER.</p>
+      <h2>YOU ARE MY<br><span>FAVORITE ADVENTURE.</span></h2>
+      <p class="final-birthday">HAPPY BIRTHDAY ♥</p>
+      <button class="pixel-btn replay-btn" id="replayBtn">↻ PLAY AGAIN</button>
+      <p class="footer-note">MADE WITH ♥ JUST FOR YOU</p>
+    </section>
+  </main>
+
+  <div class="modal" id="photoModal" aria-hidden="true">
+    <button class="modal-close" id="modalClose" aria-label="ปิด">×</button>
+    <div class="modal-card"><div class="modal-art">♥</div><p id="modalCaption"></p></div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

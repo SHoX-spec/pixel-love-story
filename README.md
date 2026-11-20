@@ -1,2 +1,41 @@
-# pixel-love-story
-My Birthday Surprise Website
+# Pixel Love Story ❤️
+
+เว็บเซอร์ไพรส์วันเกิดสไตล์เกม Pixel Art 8-bit สร้างด้วย HTML, CSS และ JavaScript ธรรมดา เน้นเบา ไม่ใช้ React หรือ Framework
+
+## วิธีเปิดใน VS Code
+
+1. แตกไฟล์ ZIP
+2. เปิด VS Code → **File → Open Folder...** → เลือกโฟลเดอร์ `pixel-love-story`
+3. เปิด `index.html` ในเบราว์เซอร์ได้เลย หรือใช้ส่วนขยาย **Live Server** แล้วกด **Go Live**
+
+ไม่ต้องรัน `npm install` และไม่ต้อง build โปรเจกต์
+
+## ปรับแต่งข้อความและรูป
+
+เปิดไฟล์ `js/script.js` แล้วแก้ส่วน `CONFIG`:
+
+- `birthdayMessage` — ข้อความหลังเปิดกล่องของขวัญ
+- `loveLetter` — เนื้อหาในจดหมาย
+- `photos` — รูปและคำบรรยายทั้ง 3 รูป
+
+ตัวอย่างการใส่รูป:
+
+```js
+photos: [
+  { src: "assets/images/photo-1.jpg", caption: "วันแรกที่เราไปเที่ยวด้วยกัน" },
+  { src: "assets/images/photo-2.jpg", caption: "รอยยิ้มที่ชอบที่สุด" },
+  { src: "assets/images/photo-3.jpg", caption: "ความทรงจำของเรา" }
+]
+```
+
+นำรูปไปวางใน `assets/images/` และตั้งชื่อให้ตรงกับที่ใส่ใน `src`
+
+## เสียง
+
+ปุ่ม ♫ มุมขวาบนเปิดเสียงชิปจูนที่สร้างจาก Web Audio API ในตัว ไม่ต้องดาวน์โหลดไฟล์เพลงเพิ่ม และจะไม่เล่นเองก่อนผู้ใช้กดปุ่ม
+
+## หมายเหตุ
+
+- Google Fonts ต้องใช้อินเทอร์เน็ตเพื่อโหลดฟอนต์ หากออฟไลน์จะใช้ฟอนต์สำรอง
+- เอฟเฟกต์หลักทำด้วย CSS และ JavaScript ไม่มีไลบรารีแอนิเมชันภายนอก
+- ตัวละครเป็นงานออกแบบต้นฉบับแนวเกมย้อนยุค ไม่ใช้สไปรต์หรือตัวละคร Mario ที่มีลิขสิทธิ์
